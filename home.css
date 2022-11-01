@@ -1,63 +1,18 @@
 .home-page {
-    display: flex;
-    flex-flow: row wrap;
-    
-    
-   /* font-family: "m6x11";
+    font-family: "m6x11";
     background-color: rgb(0, 0, 255, 25%);
-    overflow: auto;*/
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
-
-/* We tell all items to be 100% width, via flex-basis */
-.home-page > * {
-    flex: 1 100%;
-}
-
-/* We rely on source order for mobile-first approach
- * in this case:
- * 1. header
- * 2. article
- * 3. aside 1
- * 4. aside 2
- * 5. footer
- */
 
 .child {
     margin:2%;
     text-align: center;
     font-size: 2vw;
     color: white;
+    background-color: rgb(255, 0, 0, 25%);
 }
 
-.header {
-    background: tomato;
-  }
-  
-  .footer {
-    background: lightgreen;
-  }
-  
-  .main {
-    background: deepskyblue;
-  }
-  
-  .aside-1 {
-    background: gold;
-  }
-  
-  .aside-2 {
-    background: hotpink;
-  }
 
-  @media all and (min-width: 600px) {
-    .aside { flex: 1 0 0; }
-  }
-  
-  @media all and (min-width: 800px) {
-    .main    { flex: 3 0px; }
-    .aside-1 { order: 1; } 
-    .main    { order: 2; }
-    .aside-2 { order: 3; }
-    .footer  { order: 4; }
-  }
   
