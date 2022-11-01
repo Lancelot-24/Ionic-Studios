@@ -3,7 +3,21 @@ body {
     Background-attachment: fixed;
     background-size: contain;
     background-color: #090a2a;
+    
 }
+
+
+
+footer {
+    background-color: rgba(168, 168, 168, 0.25);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
 @font-face
 {
    font-family: "m6x11";
@@ -29,13 +43,13 @@ body {
 .scale {
     font-family: "ThaleahFat";
     font-size: 4vw;
-  inline-size: min-content;
+    inline-size: min-content;
     line-height: 50%;
     overflow: hidden;
 }
 
 
-.sidebar {
+.sidebar { 
     position: fixed;
     height: 100%;
     width: 13%;
@@ -52,7 +66,6 @@ body {
    
     background-image: url(left-border-2.svg);
     background-size: 53px 262px;
-    
 
 }
 
@@ -98,7 +111,9 @@ body {
   }
 
 
+    
   .main-bg {
+    border-radius: 25px;
     position: fixed;
     width: 87%;
     height: 100%;
@@ -111,7 +126,7 @@ body {
     background-position:  auto;
     background-size: cover;
     
-    box-shadow: rgba(0, 0, 0, .2) 0 0 0 1000000px inset;
+    box-shadow: rgba(0, 0, 0, .25) 0 0 0 1000000px inset;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -178,6 +193,7 @@ body {
   /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 1.75vh;
+    
 }
  
 /* Track */
